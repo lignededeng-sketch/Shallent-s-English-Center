@@ -136,14 +136,42 @@ export default function App() {
             </FadeIn>
             
             <FadeIn delay={0.3}>
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
-                <button className="w-full sm:w-auto bg-shallent-violet text-white px-8 py-4 rounded-xl text-lg font-medium hover:bg-shallent-violet-dark transition-all shadow-lg shadow-shallent-violet/20 flex items-center justify-center gap-2 group">
-                  免費預約體驗
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                </button>
-                <button className="w-full sm:w-auto bg-white border border-shallent-gray text-shallent-text px-8 py-4 rounded-xl text-lg font-medium hover:bg-shallent-gray transition-colors">
-                  了解課程規劃
-                </button>
+              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mb-12">
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 flex-grow">
+                  <button className="w-full sm:w-auto bg-shallent-violet text-white px-8 py-4 rounded-xl text-lg font-medium hover:bg-shallent-violet-dark transition-all shadow-lg shadow-shallent-violet/20 flex items-center justify-center gap-2 group">
+                    免費預約體驗
+                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  </button>
+                  <button className="w-full sm:w-auto bg-white border border-shallent-gray text-shallent-text px-8 py-4 rounded-xl text-lg font-medium hover:bg-shallent-gray transition-colors">
+                    了解課程規劃
+                  </button>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center gap-6 p-4 bg-shallent-violet-light/5 rounded-2xl border border-shallent-violet-light/10">
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-white p-1 rounded-lg shadow-sm overflow-hidden shrink-0">
+                      <img 
+                        src="/qr code 1.jpeg" 
+                        alt="LINE QR Code 1" 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                    <div className="w-20 h-20 bg-white p-1 rounded-lg shadow-sm overflow-hidden shrink-0">
+                      <img 
+                        src="/qr code 2.jpeg" 
+                        alt="LINE QR Code 2" 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-shallent-violet-dark font-bold text-sm">掃描 QR Code</div>
+                    <div className="text-shallent-heading font-medium text-xs">立即加入 LINE 諮詢</div>
+                    <div className="text-shallent-text-light text-[10px] mt-1 italic">快速聯繫，專人回覆</div>
+                  </div>
+                </div>
               </div>
             </FadeIn>
 
@@ -549,7 +577,7 @@ export default function App() {
           </FadeIn>
           
           <FadeIn delay={0.2}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
               <button className="w-full sm:w-auto bg-shallent-yellow text-shallent-heading px-10 py-5 rounded-2xl text-xl font-bold hover:bg-shallent-yellow-light hover:scale-105 transition-all shadow-xl shadow-shallent-yellow/20">
                 立即預約免費試聽
               </button>
@@ -558,7 +586,34 @@ export default function App() {
                 加入 LINE 諮詢
               </button>
             </div>
-            <p className="mt-6 text-sm text-indigo-300 font-medium">✨ 填寫表單後，顧問將於 12 小時內與您聯繫</p>
+
+            <div className="inline-flex flex-col sm:flex-row items-center gap-6 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 text-left mx-auto">
+              <div className="flex gap-4">
+                <div className="w-20 h-20 bg-white p-1 rounded-lg overflow-hidden shrink-0">
+                  <img 
+                    src="/qr code 1.jpeg" 
+                    alt="LINE QR Code 1" 
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="w-20 h-20 bg-white p-1 rounded-lg overflow-hidden shrink-0">
+                  <img 
+                    src="/qr code 2.jpeg" 
+                    alt="LINE QR Code 2" 
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="text-shallent-yellow font-bold text-sm">掃描 QR Code</div>
+                <div className="text-white font-medium text-xs">立即加入 LINE 諮詢</div>
+                <div className="text-indigo-200 text-[10px] mt-1 italic">快速聯繫，專人回覆</div>
+              </div>
+            </div>
+            
+            <p className="mt-8 text-sm text-indigo-300 font-medium">✨ 填寫表單後，顧問將於 12 小時內與您聯繫</p>
           </FadeIn>
         </div>
       </section>
